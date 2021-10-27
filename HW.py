@@ -3,7 +3,7 @@ import os, glob, re
 search_key = input('Введите нужное слово: ')
 trk = input('Введите путь до файла: ')
 
-'''if not trk.endswith('.log'):
+if not trk.endswith('.log'):
     os.chdir(trk)
     for filename in glob.glob('*.log'):
         f = open(filename, 'r')
@@ -14,7 +14,7 @@ trk = input('Введите путь до файла: ')
                     pars.write(line)
 
 
-else:
+'''else:
     os.chdir(os.path.join(trk, '..'))
     f = open(trk, 'r')
     print(os.getcwd())
