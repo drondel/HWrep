@@ -13,8 +13,7 @@ if not trk.endswith('.log'):
                 with open('parsing.log', 'a') as pars:
                     pars.write(line)
 
-
-'''else:
+else:
     os.chdir(os.path.join(trk, '..'))
     f = open(trk, 'r')
     print(os.getcwd())
@@ -23,4 +22,3 @@ if not trk.endswith('.log'):
             print(line + ' ' + 'Найдено совпадение')
             with open(os.path.join(os.getcwd(), 'justone.log'), 'a') as one:
                 one.write(line)
-'''
